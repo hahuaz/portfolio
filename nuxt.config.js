@@ -19,10 +19,10 @@ export default {
         src: '/js/jquery-2.1.1.js',
         body: true,
       },
-      {
-        src: '/js/main.js',
-        body: true,
-      },
+      // {
+      //   src: '/js/main.js',
+      //   body: true,
+      // },
     ],
   },
 

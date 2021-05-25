@@ -1,9 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* -------------------------------- 
 
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -13,7 +146,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #363558;
   background-color: #1c1726;
 }
@@ -23,8 +156,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
-  font-family: "Vollkorn", serif;
+h1,
+h2 {
+  font-family: 'Vollkorn', serif;
 }
 
 /* -------------------------------- 
@@ -116,7 +250,7 @@ Main content
 
 .cd-gallery::after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 .cd-gallery::before {
@@ -225,7 +359,8 @@ Main content
   .cd-item p {
     font-size: 1.6rem;
   }
-  .cd-item h2, .cd-item p {
+  .cd-item h2,
+  .cd-item p {
     -webkit-transform: translateY(30px);
     -moz-transform: translateY(30px);
     -ms-transform: translateY(30px);
@@ -246,7 +381,8 @@ Main content
     -moz-transition: opacity 0.3s 0s, -moz-transform 0.3s 0s;
     transition: opacity 0.3s 0s, transform 0.3s 0s;
   }
-  .no-touch .cd-item a:hover h2, .no-touch .cd-item a:hover p {
+  .no-touch .cd-item a:hover h2,
+  .no-touch .cd-item a:hover p {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -353,7 +489,7 @@ folding panel
   -ms-transform: translateX(-100%) rotateY(-90deg);
   -o-transform: translateX(-100%) rotateY(-90deg);
   transform: translateX(-100%) rotateY(-90deg);
-  background-color: #c0c3c3;
+  background-color: white;
 }
 .cd-folding-panel .fold-left {
   /* on mobile only the right fold side is visible */
@@ -380,7 +516,8 @@ folding panel
   -moz-transition: opacity 0.2s 0s;
   transition: opacity 0.2s 0s;
 }
-.cd-folding-panel .cd-close::after, .cd-folding-panel .cd-close::before {
+.cd-folding-panel .cd-close::after,
+.cd-folding-panel .cd-close::before {
   /* lines of 'X' icon */
   content: '';
   position: absolute;
@@ -522,13 +659,14 @@ folding panel
   -moz-transition: -moz-transform 0.2s 0.2s, opacity 0.2s 0.2s;
   transition: transform 0.2s 0.2s, opacity 0.2s 0.2s;
 }
-.cd-fold-content p, .cd-fold-content em {
+.cd-fold-content p,
+.cd-fold-content em {
   line-height: 1.6;
 }
 .cd-fold-content em {
   display: inline-block;
   margin: 1em 0;
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-size: 1.8rem;
   color: #7a78ae;
   -webkit-transition: -webkit-transform 0.2s 0.1s, opacity 0.2s 0.1s;
