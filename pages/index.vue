@@ -5,43 +5,34 @@
         <h1 class="text-red-500">3D Folding Panel</h1>
       </header>
 
-      <ul class="cd-gallery">
-        <li class="cd-item" @click="openComponent('who')">
+      <ul v-scroll-to="'.cd-gallery'" class="cd-gallery">
+        <li class="one cd-item" @click="openComponent('who')">
           <div class="text-white p-4">
             <h2>Title 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur.</p>
             <b>View More</b>
           </div>
         </li>
-
-        <li class="cd-item">
-          <a href="item-2.html">
-            <div>
-              <h2>Title 2</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              <b>View More</b>
-            </div>
-          </a>
+        <li class="second cd-item" @click="openComponent('who')">
+          <div class="text-white p-4">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <b>View More</b>
+          </div>
         </li>
-
-        <li class="cd-item">
-          <a class="dark-text" href="item-3.html">
-            <div>
-              <h2>Title 3</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              <b>View More</b>
-            </div>
-          </a>
+        <li class="third cd-item" @click="openComponent('who')">
+          <div class="text-white p-4">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <b>View More</b>
+          </div>
         </li>
-
-        <li class="cd-item">
-          <a href="item-4.html">
-            <div>
-              <h2>Title 4</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              <b>View More</b>
-            </div>
-          </a>
+        <li class="fourth cd-item" @click="openComponent('who')">
+          <div class="text-white p-4">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <b>View More</b>
+          </div>
         </li>
       </ul>
       <!-- .cd-gallery -->
