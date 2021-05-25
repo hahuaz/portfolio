@@ -639,7 +639,7 @@ folding panel
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 4em 2em;
+  /* padding: 4em 2em; */
   visibility: hidden;
   -webkit-transition: visibility 0s 0.4s;
   -moz-transition: visibility 0s 0.4s;
@@ -718,7 +718,7 @@ folding panel
 }
 @media only screen and (min-width: 1100px) {
   .cd-fold-content {
-    padding: 4em;
+    /* padding: 4em; */
   }
   .cd-fold-content > * {
     -webkit-transform: translateY(40px);

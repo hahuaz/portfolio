@@ -55,7 +55,7 @@
         ></component>
       </div>
 
-      <a class="cd-close" href="#0"></a>
+      <span class="cd-close" href="#"></span>
     </div>
     <!-- .cd-folding-panel -->
   </div>
