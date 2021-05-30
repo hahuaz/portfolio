@@ -1,4 +1,5 @@
 export default {
+  ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'portfolio',
@@ -15,22 +16,14 @@ export default {
       {
         src: '/js/modernizr.js',
       },
-      {
-        src: '/js/jquery-2.1.1.js',
-        body: true,
-      },
-      // {
-      //   src: '/js/main.js',
-      //   body: true,
-      // },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/style.css'],
+  css: ['~/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-typer.js', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -41,6 +34,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,4 +50,17 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  fontawesome: {
+    icons: {
+      solid: ['faPaperPlane'],
+      regular: true,
+      // light: [ ... ],
+      // duotone: [ ... ],
+      brands: true,
+    },
+  },
+  publicRuntimeConfig: {
+    strapiURL: 'http://localhost:1337',
+  },
+  privateRuntimeConfig: {},
 }

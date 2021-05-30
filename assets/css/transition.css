@@ -1,0 +1,36 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.glide-up-fastest-enter-active,
+.glide-up-fastest-leave-active {
+  transition: all 0.2s 0.2s;
+}
+.glide-up-fastest-enter,
+.glide-up-fastest-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.glide-up-fast-enter-active,
+.glide-up-fast-leave-active {
+  transition: all 0.4s 0.3s;
+}
+.glide-up-fast-enter,
+.glide-up-fast-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}
+.glide-up-normal-enter-active,
+.glide-up-normal-leave-active {
+  transition: all 0.4s 0.4s;
+}
+.glide-up-normal-enter,
+.glide-up-normal-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}
