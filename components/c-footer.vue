@@ -1,7 +1,9 @@
 <template>
   <div
     class="
-      grid grid-flow-col
+      grid grid-flow-row
+      md:grid-flow-col
+      gap-y-6
       justify-items-center
       items-center
       text-gray-100

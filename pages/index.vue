@@ -1,5 +1,5 @@
 <template>
-  <div class="border-r">
+  <div class="">
     <section>
       <landing-hero></landing-hero>
     </section>

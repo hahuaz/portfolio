@@ -1,25 +1,30 @@
 <template>
-  <div class="contact bg-black py-12 text-gray-50">
-    <div class="contact__header">
+  <div class="contact bg-black text-gray-50">
+    <div class="contact__header text-lg md:text-2xl lg:text-4xl xl:text-6xl">
       <h1 class="left">Say Hello</h1>
-      <span class="">or</span>
+      <span class="py-1 px-2 text-base lg:text-2xl">or</span>
       <h1 class="right">Start a Project</h1>
     </div>
     <div
       class="
         contact__content
-        grid grid-cols-2
-        py-12
+        grid grid-cols-1
+        gap-y-12
+        lg:grid-cols-2
+        xl:py-12
+        text-sm
+        leading-relaxed
         justify-items-center
         items-center
+        pb-12
       "
     >
-      <div class="px-4">
+      <div class="px-4 max-w-lg xl:max-w-xl">
         <div>
           <div class="face--wrapper">
             <div class="face"></div>
           </div>
-          <p class="presentation font-serif">
+          <p class="presentation font-serif text-base xl:text-lg">
             I am <span>24</span>, located in İstanbul - Turkey. I am working as
             <span>freelancer</span> and currently availabe to contribute any
             project. Feedback, work, team-member? Feel free to
@@ -27,19 +32,19 @@
           </p>
         </div>
       </div>
-      <div class="inputs grid grid-flow-row gap-y-4">
+      <div class="inputs grid grid-flow-row gap-y-4 w-full max-w-lg px-4">
         <input
           v-model="email"
           type="text"
           placeholder="E-mail"
-          class="rounded-lg py-2 px-3 text-black w-80 font-semibold"
+          class="rounded-lg py-2 px-3 text-black font-semibold max-w-xs"
         />
         <textarea
           id=""
           v-model="message"
           name=""
           placeholder="Message..."
-          class="rounded-lg py-2 px-3 text-black"
+          class="rounded-lg py-2 px-3 text-black h-28"
         ></textarea>
         <div
           class="grid grid-flow-col auto-cols-min gap-x-4 items-center"
@@ -128,27 +133,29 @@ export default {
 <style lang="scss" scoped>
 .contact {
   &__header {
-    padding: 2rem 0;
     display: grid;
+    padding: 1rem 0; /* it's necessary for showing borders on overflow */
+
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3rem 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     overflow: hidden;
+    @media (min-width: 768px) {
+      padding: 2rem 0;
+    }
+    @media (min-width: 1024px) {
+      padding: 3rem 0;
+    }
     span {
-      font-size: 1.5rem;
-      padding: 0 1rem 0.43rem;
       border-radius: 0.8rem;
       background-color: #464646;
-      line-height: 1.7rem;
       align-self: center;
       justify-self: end;
       grid-row-start: 2;
+      transform: translateX(50%);
     }
     .left,
     .right {
-      font-size: 4rem;
-
-      line-height: 4.3rem;
       display: inline-block;
       position: relative;
       font-weight: bold;
@@ -160,9 +167,9 @@ export default {
         content: '';
         position: absolute;
         background-color: white;
-        width: 400%;
+        width: 1000%;
         height: 3px;
-        top: -7px;
+        top: 0;
         right: 0;
       }
     }
@@ -173,18 +180,16 @@ export default {
         content: '';
         position: absolute;
         background-color: white;
-        width: 400%;
+        width: 1000%;
         height: 3px;
-        bottom: -7px;
+        bottom: 0;
         left: 0;
       }
     }
   }
   &__content {
     .presentation {
-      font-size: 1.3rem;
       word-spacing: 0.25rem;
-      max-width: 650px;
       span {
         background-color: #1e1e1e;
         padding: 0 0.6rem;
@@ -195,8 +200,8 @@ export default {
     .face--wrapper {
       position: relative;
       padding: 2px;
-      width: 224px;
-      height: 224px;
+      width: 154px;
+      height: 154px;
       background-color: white;
       box-sizing: border-box;
       clip-path: circle(50% at 50% 50%);
@@ -205,14 +210,23 @@ export default {
       margin-right: 1.3rem;
       shape-outside: circle(50% at 50% 50%);
 
+      @media (min-width: 1280px) {
+        width: 224px;
+        height: 224px;
+      }
       .face {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
         background-image: url('~/assets/image/face.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         clip-path: circle(50% at 50% 50%);
+
+        @media (min-width: 1280px) {
+          width: 220px;
+          height: 220px;
+        }
       }
     }
     .inputs {
@@ -222,10 +236,6 @@ export default {
         }
       }
 
-      textarea {
-        width: 500px;
-        height: 160px;
-      }
       button {
         background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
         transition: all 0.3s;
