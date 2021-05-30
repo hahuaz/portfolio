@@ -19,12 +19,20 @@
         pb-12
       "
     >
-      <div class="px-4 max-w-lg xl:max-w-xl">
+      <div class="px-1 max-w-lg xl:max-w-xl">
         <div>
-          <div class="face--wrapper">
+          <div class="face--wrapper mr-2 sm:mr-5">
             <div class="face"></div>
           </div>
-          <p class="presentation font-serif text-base xl:text-lg">
+          <p
+            class="
+              presentation
+              font-serif
+              text-gray-200 text-sm
+              sm:text-base
+              xl:text-lg
+            "
+          >
             I am <span>24</span>, located in İstanbul - Turkey. I am working as
             <span>freelancer</span> and currently availabe to contribute any
             project. Feedback, work, team-member? Feel free to
@@ -207,7 +215,6 @@ export default {
       clip-path: circle(50% at 50% 50%);
 
       float: left;
-      margin-right: 1.3rem;
       shape-outside: circle(50% at 50% 50%);
 
       @media (min-width: 1280px) {
