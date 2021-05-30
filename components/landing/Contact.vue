@@ -15,15 +15,17 @@
       "
     >
       <div class="px-4">
-        <div class="face--wrapper">
-          <div class="face"></div>
+        <div>
+          <div class="face--wrapper">
+            <div class="face"></div>
+          </div>
+          <p class="presentation font-serif">
+            I am <span>24</span>, located in İstanbul - Turkey. I am working as
+            <span>freelancer</span> and currently availabe to contribute any
+            project. Feedback, work, team-member? Feel free to
+            <span>get in touch</span> by any means of communication.
+          </p>
         </div>
-        <p class="presentation font-serif">
-          I am <span>24</span>, located in İstanbul - Turkey. I am working as
-          <span>freelancer</span> and currently availabe to contribute any
-          project. Feedback, work, team-member? Feel free to
-          <span>get in touch</span> by any means of communication.
-        </p>
       </div>
       <div class="inputs grid grid-flow-row gap-y-4">
         <input
@@ -229,11 +231,9 @@ export default {
         transition: all 0.3s;
         &:hover {
           box-shadow: 0px 2px 10px white;
-          transform: translateY(-3px);
         }
         &:active {
           box-shadow: 0px 2px 10px white;
-          transform: translateY(-3px);
         }
       }
     }

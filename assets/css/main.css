@@ -9,6 +9,11 @@
   src: url('~/assets/fonts/Comfortaa-Light.ttf');
 }
 
+.border-r,
+.border-r > * {
+  border: 1px solid red;
+}
+
 section {
   position: relative;
 }

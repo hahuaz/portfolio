@@ -24,7 +24,6 @@
           <a href="https://twitter.com/marjinalbiz">
             <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
-
           <a href="https://www.instagram.com/hasan.hseyin/">
             <font-awesome-icon :icon="['fab', 'instagram']" />
           </a>

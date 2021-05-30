@@ -1,0 +1,47 @@
+<template>
+  <div
+    class="
+      grid grid-flow-col
+      justify-items-center
+      items-center
+      text-gray-100
+      py-8
+    "
+    style="background-color: #191919"
+  >
+    <div class="font-semibold uppercase">
+      © all rights reserved - lorem.com - 2021
+    </div>
+    <div class="links text-2xl flex gap-x-4 justify-center">
+      <a href="https://github.com/hahuaz">
+        <font-awesome-icon :icon="['fab', 'github']" />
+      </a>
+      <a href="mailto:work.hahuaz@email.com">
+        <font-awesome-icon :icon="['far', 'envelope']" />
+      </a>
+      <a href="https://twitter.com/marjinalbiz">
+        <font-awesome-icon :icon="['fab', 'twitter']" />
+      </a>
+      <a href="https://www.instagram.com/hasan.hseyin/">
+        <font-awesome-icon :icon="['fab', 'instagram']" />
+      </a>
+      <a href="https://www.linkedin.com/in/hasan-biyik-51046a116/">
+        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="scss" scoped>
+.links {
+  > * {
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #252424;
+  }
+}
+</style>
