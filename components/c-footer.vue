@@ -8,10 +8,11 @@
       items-center
       text-gray-100
       py-8
+      px-2
     "
     style="background-color: #191919"
   >
-    <div class="font-semibold uppercase">
+    <div class="font-semibold uppercase text-xs md:text-base">
       © all rights reserved - lorem.com - 2021
     </div>
     <div class="links text-2xl flex gap-x-4 justify-center">
