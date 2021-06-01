@@ -2,7 +2,7 @@
   <div class="bg-black">
     <!-- this background will effect the folding triangle that appear on top and bottom-->
     <main class="cd-main" :class="{ 'fold-is-open': isOpen }">
-      <ul v-scroll-to="'.cd-gallery'" class="cd-gallery text-white">
+      <ul class="cd-gallery text-white" @click="scrollToTop">
         <li class="cd-item" @click="openComponent('landing-content-who')">
           <landing-four-who></landing-four-who>
         </li>
@@ -12,10 +12,7 @@
         <li class="cd-item" @click="openComponent('landing-content-projects')">
           <landing-four-projects></landing-four-projects>
         </li>
-        <li
-          class="fourth cd-item"
-          @click="openComponent('landing-content-blog')"
-        >
+        <li class="cd-item" @click="openComponent('landing-content-blog')">
           <landing-four-blog></landing-four-blog>
         </li>
       </ul>
@@ -44,6 +41,7 @@
 
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
+import { scrollTo } from 'vue-scrollto'
 export default {
   mixins: [clickaway],
   data() {
@@ -53,8 +51,13 @@ export default {
     }
   },
 
-  mounted() {},
   methods: {
+    scrollToTop() {
+      if (document.documentElement.clientWidth > 768) {
+        scrollTo('.cd-gallery')
+      }
+    },
+
     openComponent(payload) {
       // you can add this classes with settime if component fetching is long or you can prefetch componenet with nuxt
       this.currentComponent = payload
@@ -65,9 +68,6 @@ export default {
       this.currentComponent = null
       this.isOpen = false
       document.querySelector('body').classList.remove('overflow-hidden')
-    },
-    beforeLeave(el) {
-      console.log('component transition beforeenter')
     },
   },
 }

@@ -1,6 +1,10 @@
 <template>
-  <div class="cd-fold-content p-24">
-    <p>this is lorem</p>
+  <div class="cd-fold-content">
+    <div class="four-page">
+      <div class="four-page__content">
+        <p>this is lorem</p>
+      </div>
+    </div>
   </div>
 </template>
 

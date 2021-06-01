@@ -1,0 +1,12 @@
+.four-page {
+  position: relative;
+  height: 100%;
+  padding: 1rem;
+  @media (min-width: 640px) {
+    padding: 2rem;
+  }
+  &__content {
+    position: relative;
+    z-index: 2; /* z-index needs position to work */
+  }
+}

@@ -1,9 +1,19 @@
 <template>
   <div class="contact bg-black text-gray-50">
-    <div class="contact__header text-lg md:text-2xl lg:text-4xl xl:text-6xl">
+    <div
+      class="
+        contact__header
+        text-2xl
+        sm:text-4xl
+        xl:text-6xl
+        grid grid-rows-3 grid-cols-2
+        justify-items-center
+        gap-y-1
+      "
+    >
       <h1 class="left">Say Hello</h1>
       <span class="py-1 px-2 text-base lg:text-2xl">or</span>
-      <h1 class="right">Start a Project</h1>
+      <h1 class="right">Start Project</h1>
     </div>
     <div
       class="
@@ -55,24 +65,15 @@
           class="rounded-lg py-2 px-3 text-black h-28"
         ></textarea>
         <div
-          class="grid grid-flow-col auto-cols-min gap-x-4 items-center"
+          class="
+            grid grid-flow-col
+            auto-cols-min
+            gap-x-4
+            items-center
+            justify-end
+          "
           style="height: 46px"
         >
-          <button
-            class="
-              text-black text-xl
-              rounded-md
-              px-4
-              py-1
-              font-semibold
-              w-min
-              whitespace-nowrap
-            "
-            @click="sendMessage"
-          >
-            <font-awesome-icon :icon="['fas', 'paper-plane']" />
-            Send
-          </button>
           <transition name="fade">
             <div v-if="loading" class="">
               <div class="lds-ellipsis">
@@ -98,6 +99,21 @@
               {{ status }}
             </div>
           </transition>
+          <button
+            class="
+              text-black text-xl
+              rounded-md
+              px-4
+              py-1
+              font-semibold
+              w-min
+              whitespace-nowrap
+            "
+            @click="sendMessage"
+          >
+            <font-awesome-icon :icon="['fas', 'paper-plane']" />
+            Send
+          </button>
         </div>
       </div>
     </div>
@@ -141,12 +157,7 @@ export default {
 <style lang="scss" scoped>
 .contact {
   &__header {
-    display: grid;
-    padding: 1rem 0; /* it's necessary for showing borders on overflow */
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    padding: 1.3rem 0; /* it's necessary for showing borders on overflow */
     overflow: hidden;
     @media (min-width: 768px) {
       padding: 2rem 0;
@@ -176,9 +187,12 @@ export default {
         position: absolute;
         background-color: white;
         width: 1000%;
-        height: 3px;
+        height: 1px;
         top: 0;
         right: 0;
+        @media (min-width: 640px) {
+          height: 3px;
+        }
       }
     }
     .right {
@@ -189,9 +203,12 @@ export default {
         position: absolute;
         background-color: white;
         width: 1000%;
-        height: 3px;
+        height: 1px;
         bottom: 0;
         left: 0;
+        @media (min-width: 640px) {
+          height: 3px;
+        }
       }
     }
   }

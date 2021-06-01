@@ -352,7 +352,7 @@ folding panel
 .cd-folding-panel .cd-close {
   /* 'X' close icon */
   position: absolute;
-  z-index: 1;
+  z-index: 101;
   display: inline-block;
   top: 10px;
   right: 10px;
@@ -518,24 +518,4 @@ folding panel
   -webkit-transition: visibility 0s 0.5s;
   -moz-transition: visibility 0s 0.5s;
   transition: visibility 0s 0.5s;
-}
-
-/* -------------------------------- 
-
-Javascript disabled
-
--------------------------------- */
-.no-js .cd-fold-content.single-page {
-  position: static;
-  visibility: visible;
-  height: auto;
-  background-color: #dadcdc;
-}
-.no-js .cd-fold-content.single-page > * {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
 }
