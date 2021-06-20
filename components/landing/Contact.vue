@@ -65,17 +65,13 @@
           class="rounded-lg py-2 px-3 text-black h-28"
         ></textarea>
         <div
-          class="
-            grid grid-flow-col
-            auto-cols-min
-            gap-x-4
-            items-center
-            justify-end
-          "
+          class="grid grid-flow-col gap-x-4 items-center justify-end"
           style="height: 46px"
         >
           <transition name="fade">
-            <div v-if="loading" class="">
+            <div v-if="loading" class="flex items-center space-x-3">
+              <p class="font-bold">This may take time</p>
+
               <div class="lds-ellipsis">
                 <div></div>
                 <div></div>
