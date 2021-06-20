@@ -43,6 +43,8 @@
               </h1>
               <p>Uses Nuxt as view model.</p>
               <p>Uses Strapi for managing contents on site.</p>
+              <p>Uses IntersectionObserver for reveal and scroll transitions</p>
+
             </div>
           </div>
         </transition>

@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -9,7 +10,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Personal Web Developer Portfolio. Full-Stack Software Developer and Javascript Specialist. Working as Freelancer and located in İstanbul.',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/ha.ico' }],
     script: [],

@@ -33,7 +33,7 @@
         :is="currentComponent"
         v-on-clickaway="closeComponent"
       ></component>
-      <span class="cd-close" href="#"></span>
+      <span class="cd-close cursor-pointer" href="#"></span>
     </div>
     <!-- .cd-folding-panel -->
   </div>
