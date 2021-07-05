@@ -1,18 +1,17 @@
 <template>
   <div class="cd-fold-content">
     <div class="four-page">
-      <div class="four-page__content">
+      <div class="four-page__content space-y-8 pb-8">
         <transition name="glide-up-fastest" appear>
           <h1 class="bottom__line--blue mb-12 mx-auto w-min lg:mt-12">
             Projects
           </h1>
         </transition>
-        <!-- TODO: add forecast api to projects -->
-        <!-- content: first rest API which make use of mapbox and darksky to get forecast -->
         <transition name="glide-up-fast" appear>
           <div class="project bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto">
             <a
               href="https://hahuaz-realestate-nuxt.herokuapp.com/"
+              target="_blank"
               class="
                 justify-self-center
                 relative
@@ -36,7 +35,7 @@
               >
                 <span class="mb-4 font-semibold">Go to site </span>
 
-                <div class="background--image"></div>
+                <div class="background--image realestate"></div>
               </div>
             </a>
             <div class="project--content text-sm mt-4 space-y-2">
@@ -45,9 +44,52 @@
               </h1>
               <p>Uses Nuxt as view model.</p>
               <p>Uses Strapi for managing contents on site.</p>
-              <p>
-                Uses Intersection Observer API for reveal and scroll transitions
+              <!-- prettier-ignore -->
+              <p>Uses Intersection Observer API for reveal and scroll transitions</p>
+            </div>
+          </div>
+        </transition>
+        <transition name="glide-up-normal" appear>
+          <div class="project bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto">
+            <a
+              href="https://hahuaz-forecast.herokuapp.com/"
+              target="_blank"
+              class="
+                justify-self-center
+                relative
+                block
+                max-w-sm
+                h-80
+                mx-auto
+                rounded-lg
+                overflow-hidden
+              "
+            >
+              <div
+                class="
+                  project--image
+                  w-full
+                  h-full
+                  grid
+                  items-end
+                  justify-items-center
+                "
+              >
+                <span class="mb-4 font-semibold">Go to site </span>
+
+                <div class="background--image forecast-app"></div>
+              </div>
+            </a>
+            <div class="project--content text-sm mt-4 space-y-2">
+              <h1 class="project--title font-semibold text-lg">
+                <i>Forecast App</i>
+              </h1>
+              <!-- prettier-ignore -->
+              <p>My first rest API which makes use of
+                <span class="font-semibold"> Mapbox </span> and
+                <span class="font-semibold"> Darksky. </span>
               </p>
+              <p>Uses Handlebars template.</p>
             </div>
           </div>
         </transition>
@@ -91,7 +133,6 @@ export default {
     }
 
     .background--image {
-      background-image: url('~/assets/image/realestate-screen-mockup.png');
       z-index: 1;
       background-size: cover;
 
@@ -107,6 +148,12 @@ export default {
         opacity: 0;
         transition: all 0.3s;
       }
+    }
+    .realestate {
+      background-image: url('~/assets/image/realestate-screen-mockup.png');
+    }
+    .forecast-app {
+      background-image: url('~/assets/image/forecast-app.jpg');
     }
   }
   &--content {
