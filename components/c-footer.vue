@@ -13,7 +13,7 @@
     style="background-color: #191919"
   >
     <div class="font-semibold uppercase text-xs md:text-base">
-      © all rights reserved - lorem.com - 2021
+      © all rights reserved - hahuaz.com - 2021
     </div>
     <div class="links text-2xl flex gap-x-4 justify-center">
       <a href="https://github.com/hahuaz">

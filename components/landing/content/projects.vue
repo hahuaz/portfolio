@@ -7,6 +7,8 @@
             Projects
           </h1>
         </transition>
+        <!-- TODO: add forecast api to projects -->
+        <!-- content: first rest API which make use of mapbox and darksky to get forecast -->
         <transition name="glide-up-fast" appear>
           <div class="project bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto">
             <a
@@ -43,8 +45,9 @@
               </h1>
               <p>Uses Nuxt as view model.</p>
               <p>Uses Strapi for managing contents on site.</p>
-              <p>Uses IntersectionObserver for reveal and scroll transitions</p>
-
+              <p>
+                Uses Intersection Observer API for reveal and scroll transitions
+              </p>
             </div>
           </div>
         </transition>
