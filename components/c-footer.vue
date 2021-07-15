@@ -41,10 +41,15 @@ export default {}
 
 <style lang="scss" scoped>
 .links {
-  > * {
+  > a {
     border-radius: 0.5rem;
     padding: 0.3rem 0.8rem;
     background-color: #252424;
+
+    &:hover > * {
+      transition: all 200ms ease-in-out;
+      transform: scale(1.2);
+    }
   }
 }
 </style>
