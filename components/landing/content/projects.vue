@@ -33,7 +33,7 @@
                   justify-items-center
                 "
               >
-                <span class="mb-4 font-semibold">Go to site </span>
+                <span class="mb-4 font-semibold">Go to site</span>
 
                 <div class="background--image realestate"></div>
               </div>
@@ -44,8 +44,10 @@
               </h1>
               <p>Uses Nuxt as view model.</p>
               <p>Uses Strapi for managing contents on site.</p>
-              <!-- prettier-ignore -->
-              <p>Uses Intersection Observer API for reveal and scroll transitions</p>
+              <p
+                >Uses Intersection Observer API for reveal and scroll
+                transitions
+              </p>
             </div>
           </div>
         </transition>
@@ -75,7 +77,7 @@
                   justify-items-center
                 "
               >
-                <span class="mb-4 font-semibold">Go to site </span>
+                <span class="mb-4 font-semibold">Go to site</span>
 
                 <div class="background--image forecast-app"></div>
               </div>
@@ -84,8 +86,8 @@
               <h1 class="project--title font-semibold text-lg">
                 <i>Forecast App</i>
               </h1>
-              <!-- prettier-ignore -->
-              <p>My first rest API which makes use of
+              <p
+                >My first rest API which makes use of
                 <span class="font-semibold"> Mapbox </span> and
                 <span class="font-semibold"> Darksky. </span>
               </p>
