@@ -27,6 +27,14 @@
                 limitations in my work are my skills and ideas, which encourages
                 me to produce more.
               </p>
+              <div class="py-12">
+                <a
+                  href="/hahuaz-resume.pdf"
+                  class="text-gray-100 px-4 py-2 rounded-sm bg-black"
+                  target="_blank"
+                  >Portfolio</a
+                >
+              </div>
             </div>
           </transition>
         </div>
