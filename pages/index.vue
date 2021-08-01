@@ -9,7 +9,9 @@
       <landing-four></landing-four>
     </section>
     <section>
-      <landing-contact></landing-contact>
+      <div class="bg-black py-12">
+        <landing-contact></landing-contact>
+      </div>
     </section>
   </div>
 </template>

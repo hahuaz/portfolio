@@ -1,5 +1,5 @@
 <template>
-  <div class="contact bg-black text-gray-50">
+  <div class="text-gray-50">
     <div
       class="
         contact__header
@@ -48,10 +48,11 @@
               xl:text-lg
             "
           >
-            I am <span>24</span>, located in İstanbul - Turkey. I am working as
-            <span>freelancer</span> and currently availabe to contribute any
-            project. Feedback, work, team-member? Feel free to
-            <span>get in touch</span> by any means of communication.
+            I'm <span>24</span>, located at İstanbul - Turkey. As a self-taught
+            junior <span>web developer</span> I am currently availabe to
+            contribute various projects. Care to give a feedback or work
+            together? Feel free to <span>get in touch</span> by any means of
+            communication.
           </p>
         </div>
       </div>

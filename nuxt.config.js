@@ -13,8 +13,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Personal Web Developer Portfolio. Full-Stack Software Developer and Javascript Specialist. Working as Freelancer and located in İstanbul.',
+        content: 'Junior web developer located at İstanbul - Turkey.',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/ha.ico' }],
