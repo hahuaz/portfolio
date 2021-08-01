@@ -8,11 +8,16 @@
         xl:text-6xl
         grid grid-rows-3 grid-cols-2
         justify-items-center
-        gap-y-1
       "
     >
       <h1 class="left">Say Hello</h1>
-      <span class="py-1 px-2 text-base lg:text-2xl">or</span>
+      <div
+        class="row-start-2 row-end-3 col-start-1 col-end-3 flex items-center"
+      >
+        <span class="pb-1 px-2 bg-[#464646] text-sm lg:text-2xl rounded-md"
+          >and</span
+        >
+      </div>
       <h1 class="right">Start Project</h1>
     </div>
     <div
@@ -155,26 +160,20 @@ export default {
   &__header {
     padding: 1.3rem 0; /* it's necessary for showing borders on overflow */
     overflow: hidden;
+
+    font-family: serif;
     @media (min-width: 768px) {
       padding: 2rem 0;
     }
     @media (min-width: 1024px) {
       padding: 3rem 0;
     }
-    span {
-      border-radius: 0.8rem;
-      background-color: #464646;
-      align-self: center;
-      justify-self: end;
-      grid-row-start: 2;
-      transform: translateX(50%);
-    }
+
     .left,
     .right {
       display: inline-block;
       position: relative;
       font-weight: bold;
-      font-family: serif;
     }
 
     .left {

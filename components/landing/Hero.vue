@@ -12,10 +12,16 @@
           ></vue-typer>
         </div>
         <div
-          style="color: #828283"
-          class="links text-base flex gap-x-4 justify-center"
+          class="
+            hero__links
+            text-base
+            flex
+            gap-x-4
+            justify-center
+            text-[#828283]
+          "
         >
-          <a href="https://github.com/hahuaz">
+          <a href="https://github.com/hahuaz" class="">
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <a href="mailto:work.hahuaz@email.com">
@@ -105,5 +111,9 @@ export default {}
 .background--image {
   background-image: linear-gradient(rgba(black, 0.68), rgba(black, 0.68)),
     url('~/assets/image/landing-hero.jpg');
+}
+
+.hero__links a {
+  @apply hover:text-white transition-all duration-300;
 }
 </style>
