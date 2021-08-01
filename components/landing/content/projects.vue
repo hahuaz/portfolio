@@ -28,7 +28,7 @@
                   ></font-awesome-icon>
                 </a>
                 <a
-                  href="https://hahuaz-realestate-nuxt.herokuapp.com/"
+                  href="https://palas-hahuaz.netlify.app/"
                   target="_blank"
                   class="site"
                 >
@@ -51,6 +51,10 @@
                 </div>
               </div>
               <p>Client can edit, add and delete properties via Strapi CMS. </p>
+              <p
+                >When new content added to CMS, Netlify deployment triggered
+                automatically via webhooks.</p
+              >
               <p
                 >Uses Intersection Observer API for reveal and scroll
                 transitions.
