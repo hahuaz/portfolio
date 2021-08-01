@@ -1,102 +1,159 @@
 <template>
   <div class="cd-fold-content">
     <div class="four-page">
-      <div class="four-page__content space-y-8 pb-8">
+      <div class="four-page__content space-y-12 pb-8">
         <transition name="glide-up-fastest" appear>
           <h1 class="bottom__line--blue mb-12 mx-auto w-min lg:mt-12">
             Projects
           </h1>
         </transition>
         <transition name="glide-up-fast" appear>
-          <div class="project bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto">
-            <a
-              href="https://hahuaz-realestate-nuxt.herokuapp.com/"
-              target="_blank"
-              class="
-                justify-self-center
-                relative
-                block
-                max-w-sm
-                h-80
-                mx-auto
-                rounded-lg
-                overflow-hidden
-              "
-            >
-              <div
-                class="
-                  project--image
-                  w-full
-                  h-full
-                  grid
-                  items-end
-                  justify-items-center
-                "
-              >
-                <span class="mb-4 font-semibold">Go to site</span>
+          <div class="project">
+            <div class="project__image">
+              <img
+                class="w-full h-full object-center object-cover"
+                src="/images/palas-screenmockup.jpg"
+                alt=""
+              />
 
-                <div class="background--image realestate"></div>
+              <div class="project__links">
+                <a
+                  href="https://github.com/hahuaz/palas-frontend"
+                  target="_blank"
+                  class="git"
+                >
+                  <font-awesome-icon
+                    class=""
+                    :icon="['fab', 'github']"
+                  ></font-awesome-icon>
+                </a>
+                <a
+                  href="https://hahuaz-realestate-nuxt.herokuapp.com/"
+                  target="_blank"
+                  class="site"
+                >
+                  <font-awesome-icon
+                    class=""
+                    :icon="['fas', 'external-link-alt']"
+                  ></font-awesome-icon>
+                </a>
               </div>
-            </a>
-            <div class="project--content text-sm mt-4 space-y-2">
-              <h1 class="project--title font-semibold text-lg">
-                <i>Realestate Project</i>
-              </h1>
-              <p>Uses Nuxt as view model.</p>
-              <p>Uses Strapi for managing contents on site.</p>
+            </div>
+
+            <div class="project__content text-sm mt-4 space-y-2">
+              <div class="flex gap-6 items-center">
+                <h1 class="project__title">
+                  <i>Palas Realestate</i>
+                </h1>
+                <div class="h-8 flex items-center gap-2">
+                  <img src="/images/nuxt.png" class="w-6 h-6" alt="" />
+                  <img src="/images/strapi.svg" class="w-5 h-5" alt="" />
+                </div>
+              </div>
+              <p>Client can edit, add and delete properties via Strapi CMS. </p>
               <p
                 >Uses Intersection Observer API for reveal and scroll
-                transitions
+                transitions.
               </p>
             </div>
           </div>
         </transition>
         <transition name="glide-up-normal" appear>
-          <div class="project bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto">
-            <a
-              href="https://hahuaz-forecast.herokuapp.com/"
-              target="_blank"
-              class="
-                justify-self-center
-                relative
-                block
-                max-w-sm
-                h-80
-                mx-auto
-                rounded-lg
-                overflow-hidden
-              "
-            >
-              <div
-                class="
-                  project--image
-                  w-full
-                  h-full
-                  grid
-                  items-end
-                  justify-items-center
-                "
-              >
-                <span class="mb-4 font-semibold">Go to site</span>
-
-                <div class="background--image forecast-app"></div>
+          <div class="project">
+            <div class="project__image">
+              <img
+                class="w-full h-full object-center object-cover"
+                src="/images/forecast-screenmockup.jpg"
+                alt=""
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/hahuaz/forecast-app"
+                  target="_blank"
+                  class="git"
+                >
+                  <font-awesome-icon
+                    class=""
+                    :icon="['fab', 'github']"
+                  ></font-awesome-icon>
+                </a>
+                <a
+                  href="https://hahuaz-forecast.herokuapp.com/"
+                  target="_blank"
+                  class="site"
+                >
+                  <font-awesome-icon
+                    class=""
+                    :icon="['fas', 'external-link-alt']"
+                  ></font-awesome-icon>
+                </a>
               </div>
-            </a>
-            <div class="project--content text-sm mt-4 space-y-2">
-              <h1 class="project--title font-semibold text-lg">
-                <i>Forecast App</i>
-              </h1>
+            </div>
+
+            <div class="project__content text-sm mt-4 space-y-2">
+              <div class="flex gap-6 items-center">
+                <h1 class="project__title">
+                  <i>Forecast App</i>
+                </h1>
+                <div class="h-8 flex items-center gap-2">
+                  <img src="/images/rest-api.png" class="w-6 h-6" alt="" />
+                </div>
+              </div>
               <p
-                >My first rest API which makes use of
+                >App makes use of
                 <span class="font-semibold"> Mapbox </span> and
-                <span class="font-semibold"> Darksky. </span>
+                <span class="font-semibold"> Darksky </span> APIs.
               </p>
-              <p>Uses Handlebars template.</p>
             </div>
           </div>
         </transition>
+
+        <div class="project">
+          <div class="project__image">
+            <img
+              class="w-full h-full object-center object-cover"
+              src="/images/besideme-screenmockup.jpg"
+              alt=""
+            />
+
+            <div class="project__links">
+              <a
+                href="https://github.com/hahuaz/besideme-frontend"
+                target="_blank"
+                class="git"
+              >
+                <font-awesome-icon
+                  class=""
+                  :icon="['fab', 'github']"
+                ></font-awesome-icon>
+              </a>
+              <a
+                href="https://besideme-realestate.netlify.app/"
+                target="_blank"
+                class="site"
+              >
+                <font-awesome-icon
+                  class=""
+                  :icon="['fas', 'external-link-alt']"
+                ></font-awesome-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="project__content text-sm mt-4 space-y-2">
+            <div class="flex gap-6 items-center">
+              <h1 class="project__title">
+                <i>Besideme Realestate</i>
+              </h1>
+              <div class="h-8 flex items-center gap-2">
+                <img src="/images/nuxt.png" class="w-6 h-6" alt="" />
+                <img src="/images/jamstack.png" class="w-12 h-6" alt="" />
+              </div>
+            </div>
+            <p>Created this project to sharpen my CSS skills. </p>
+          </div>
+        </div>
       </div>
-      <div class="background--image"></div>
     </div>
   </div>
 </template>
@@ -111,54 +168,48 @@ export default {
 
 <style lang="scss" scoped>
 .project {
-  &--image {
-    &:hover {
-      span {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .background--image::before {
-        opacity: 0.4;
-      }
-    }
+  @apply bg-blue-50 p-12 rounded-2xl max-w-lg mx-auto;
 
-    span {
-      color: rgb(1, 1, 150);
-      z-index: 2;
+  &__links {
+    @apply absolute opacity-0 w-full bottom-0 p-2 bg-white z-10 text-2xl flex justify-end
+gap-8 text-blue-dark;
+    transition: all 500ms ease-in-out;
+    transform-origin: right;
+
+    a {
+      visibility: hidden;
       opacity: 0;
-      transform: translateY(1rem);
-      transition: all 0.3s;
-
-      &::after {
-        content: '\2794';
-      }
+      transform: translateX(50px);
     }
 
-    .background--image {
-      z-index: 1;
-      background-size: cover;
-
-      &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-
-        background-image: linear-gradient(to top, black, transparent 50%);
-        opacity: 0;
-        transition: all 0.3s;
-      }
+    .git {
+      transition: all 300ms ease-in-out 100ms;
     }
-    .realestate {
-      background-image: url('~/assets/image/realestate-screen-mockup.png');
-    }
-    .forecast-app {
-      background-image: url('~/assets/image/forecast-app.jpg');
+    .site {
+      transition: all 300ms ease-in-out 400ms;
     }
   }
-  &--content {
+
+  &__image {
+    @apply max-w-sm h-[350px] mx-auto relative rounded-md overflow-hidden shadow-lg;
+
+    &:hover .project__links {
+      opacity: 1;
+    }
+
+    &:hover .git {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    &:hover .site {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+  &__content {
     h1 {
       &::before {
         content: '#';
@@ -177,6 +228,9 @@ export default {
         margin-right: 6px;
       }
     }
+  }
+  &__title {
+    @apply font-semibold text-2xl;
   }
 }
 </style>

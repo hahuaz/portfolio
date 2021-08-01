@@ -53,7 +53,7 @@ export default {
   build: {},
   fontawesome: {
     icons: {
-      solid: ['faPaperPlane'],
+      solid: ['faPaperPlane', 'faExternalLinkAlt'],
       regular: true,
       // light: [ ... ],
       // duotone: [ ... ],

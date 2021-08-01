@@ -8,6 +8,9 @@ module.exports = {
         comfortaa: ['comfortaa, cursive'],
         raleway: ['raleway, sans-serif'],
       },
+      colors: {
+        'blue-dark': '#08184b',
+      },
     },
   },
   variants: {

@@ -20,40 +20,44 @@
               "
             >
               <div>
-                <img class="w-16 h-16" src="/js.jpg" alt="" />
+                <img class="w-16 h-16" src="/images/js.jpg" alt="" />
                 <p class="mt-6 font-semibold">Javascript</p>
               </div>
 
               <div>
-                <img class="w-16 h-16" src="/nuxt.png" alt="" />
+                <img class="w-16 h-16" src="/images/nuxt.png" alt="" />
                 <p class="mt-6 font-semibold">Nuxt</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/vue.png" alt="" />
+                <img class="w-16 h-16" src="/images/vue.png" alt="" />
                 <p class="mt-6 font-semibold">Vue</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/nodejs.png" alt="" />
+                <img class="w-16 h-16" src="/images/nodejs.png" alt="" />
                 <p class="mt-6 font-semibold">Nodejs</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/mongodb.png" alt="" />
+                <img class="w-16 h-16" src="/images/mongodb.png" alt="" />
                 <p class="mt-6 font-semibold">Mongodb</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/strapi.svg" alt="" />
+                <img class="w-16 h-16" src="/images/strapi.svg" alt="" />
                 <p class="mt-6 font-semibold">Strapi</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/git.png" alt="" />
+                <img class="w-16 h-16" src="/images/rest-api.png" alt="" />
+                <p class="mt-6 font-semibold">API</p>
+              </div>
+              <div>
+                <img class="w-16 h-16" src="/images/git.png" alt="" />
                 <p class="mt-6 font-semibold">Git</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/tailwind.png" alt="" />
+                <img class="w-16 h-16" src="/images/tailwind.png" alt="" />
                 <p class="mt-6 font-semibold">Tailwind</p>
               </div>
               <div>
-                <img class="w-16 h-16" src="/sass.png" alt="" />
+                <img class="w-16 h-16" src="/images/sass.png" alt="" />
                 <p class="mt-6 font-semibold">Scss</p>
               </div>
             </div>
