@@ -16,6 +16,7 @@
                 justify-items-center
                 text-center
                 py-6
+                px-4
                 rounded-md
               "
             >

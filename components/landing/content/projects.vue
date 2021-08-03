@@ -72,7 +72,7 @@
               />
               <div class="project__links">
                 <a
-                  href="https://github.com/hahuaz/forecast-app"
+                  href="https://github.com/hahuaz/forecast-frontend"
                   target="_blank"
                   class="git"
                 >
@@ -82,7 +82,7 @@
                   ></font-awesome-icon>
                 </a>
                 <a
-                  href="https://hahuaz-forecast.herokuapp.com/"
+                  href="https://forecast-hahuaz.netlify.app/"
                   target="_blank"
                   class="site"
                 >
@@ -106,8 +106,9 @@
               <p
                 >App makes use of
                 <span class="font-semibold"> Mapbox </span> and
-                <span class="font-semibold"> Darksky </span> APIs.
+                <span class="font-semibold"> OpenWeatherMap </span> APIs.
               </p>
+              <p>Using Vuetify as UI.</p>
             </div>
           </div>
         </transition>
