@@ -148,7 +148,13 @@ export default {
         this.status = 'Message received.'
       } catch (error) {
         this.errorOccured = true
-        this.status = `Error occured: "${error.response.statusText}"`
+        if (error.response?.status === 400) {
+          this.status = 'Bad request!'
+        } else if (error.response?.status === 500) {
+          this.status = `Internal error occured! Sorry.`
+        } else {
+          this.status = 'Something went wrong!'
+        }
       }
       this.loading = false
     },
