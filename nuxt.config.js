@@ -62,7 +62,7 @@ export default {
   },
   publicRuntimeConfig: {
     strapiURL:
-      process.env.NODE === 'deployement'
+      process.env.NODE === 'deployment'
         ? process.env.STRAPI_URL
         : 'http://localhost:1337',
   },
