@@ -61,7 +61,6 @@ export default {
     },
   },
   publicRuntimeConfig: {
-    /* set strapi url on heroku */
     strapiURL: process.env.STRAPI_URL || 'http://localhost:1337',
   },
   privateRuntimeConfig: {},

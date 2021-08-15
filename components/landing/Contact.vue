@@ -141,7 +141,7 @@ export default {
       this.errorOccured = false
 
       try {
-        await this.$axios.$post(this.$config.strapiURL + '/messages', {
+        await this.$axios.$post(this.$config.strapiURL + 'messages', {
           email: this.email,
           message: this.message,
         })
