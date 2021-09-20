@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+   <loc>http://www.hahuaz.com</loc>
+   <PageMap xmlns="http://www.google.com/schemas/sitemap-pagemap/1.0">
+     <DataObject type="document" id="hibachi">
+       <Attribute name="name">Dragon</Attribute>
+       <Attribute name="review">3.5</Attribute>
+     </DataObject>
+   </PageMap>
+ </url>
+</urlset>
