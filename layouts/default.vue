@@ -1,5 +1,18 @@
 <template>
   <div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Hahuaz",
+        "url": "hahuaz.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
     <Nuxt />
     <c-footer></c-footer>
   </div>
