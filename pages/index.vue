@@ -21,6 +21,11 @@ export default {
   data() {
     return {}
   },
+  mounted() {
+    fetch('https://of5309w9j4.execute-api.us-west-2.amazonaws.com/hello')
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+  },
   methods: {},
 }
 </script>
