@@ -28,7 +28,7 @@
                   ></font-awesome-icon>
                 </a>
                 <a
-                  href="https://palas-hahuaz.netlify.app/"
+                  href="https://palas-realestate.netlify.app/"
                   target="_blank"
                   class="site"
                 >
