@@ -18,7 +18,7 @@
 
               <div class="project__links">
                 <a
-                  href="https://github.com/hahuaz/palas-frontend"
+                  href="https://github.com/hahuaz/palas-realestate"
                   target="_blank"
                   class="git"
                 >
