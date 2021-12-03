@@ -72,7 +72,7 @@
               />
               <div class="project__links">
                 <a
-                  href="https://github.com/hahuaz/forecast-frontend"
+                  href="https://github.com/hahuaz/forecast"
                   target="_blank"
                   class="git"
                 >
