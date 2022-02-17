@@ -9,4 +9,11 @@
      </DataObject>
    </PageMap>
  </url>
+ <url>
+  <loc>http://www.hahuaz.com/profil</loc>
+  <lastmod>2021-01-01</lastmod>
+  <lastmod>2021-02-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>  
+  </url>  
 </urlset>
