@@ -17,7 +17,7 @@ export function Navlinks() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/hasanbiyik01/"
+          href="https://www.linkedin.com/in/hahuaz/"
           target="_blank"
           rel="noreferrer"
         >
