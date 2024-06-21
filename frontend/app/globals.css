@@ -88,3 +88,7 @@ aside .active {
     color: black;
   }
 }
+
+table tr {
+  text-align: center;
+}
