@@ -23,7 +23,6 @@ export class AppStack extends cdk.Stack {
 
     const { siteBucket } = new StorageConstruct(this, `storage`, {});
 
-    // LambdaConstruct depends on StorageConstruct
     const { postMapper } = new LambdaConstruct(this, `lambda`, {});
 
     const customCachePolicy = new aws_cloudfront.CachePolicy(
@@ -94,10 +93,7 @@ export class AppStack extends cdk.Stack {
         ],
         domainNames: [DOMAIN_NAME],
         /**
-         * CF distribution only accept certificates that is created on us-east-1.
-         * Certificate will be created manually on the console because it requires manuel DNS
-         * validation on registrar, which is usually Google, and force us to create new stack
-         * on us-east-1 just to declare certificate resource
+         * CF distribution only accept certificates that is created on us-east-1. Certificate will be created manually on the console because it requires manuel DNS validation on registrar.
          */
         certificate: aws_certificatemanager.Certificate.fromCertificateArn(
           this,
@@ -107,18 +103,18 @@ export class AppStack extends cdk.Stack {
       }
     );
 
-    // NOTE: DNS records of the domain should be configured manually on console to point name servers of hosted zone.
-    const hostedZone = new aws_route53.PublicHostedZone(this, "HostedZone", {
-      zoneName: DOMAIN_NAME,
-    });
+    // TODO: after moving the domain registration to route53 start using paid hosted zone instead of cloudflare
+    // const hostedZone = new aws_route53.PublicHostedZone(this, "HostedZone", {
+    //   zoneName: DOMAIN_NAME,
+    // });
 
-    const aliasRecord = new aws_route53.ARecord(this, "AliasRecord", {
-      zone: hostedZone,
-      recordName: DOMAIN_NAME,
-      target: aws_route53.RecordTarget.fromAlias(
-        new aws_route53_targets.CloudFrontTarget(siteBucketDist)
-      ),
-    });
+    // const aliasRecord = new aws_route53.ARecord(this, "AliasRecord", {
+    //   zone: hostedZone,
+    //   recordName: DOMAIN_NAME,
+    //   target: aws_route53.RecordTarget.fromAlias(
+    //     new aws_route53_targets.CloudFrontTarget(siteBucketDist)
+    //   ),
+    // });
 
     // CFN OUTPUTS
     new cdk.CfnOutput(this, "siteBucketUrl", {
