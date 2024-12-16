@@ -64,7 +64,7 @@ export function Navlinks() {
 export default function Navbar() {
   return (
     <nav>
-      <div className="navbar relative  pb-12 text-github-white-link lg:pb-24">
+      <div className="navbar relative pb-12 text-github-white-link lg:pb-24">
         <div className="mx-auto max-w-screen-xl px-3 py-6">
           <div className="flex flex-col items-center gap-6 xl:items-start">
             <div className=" flex max-w-sm items-center gap-2 lg:max-w-none lg:gap-6">
