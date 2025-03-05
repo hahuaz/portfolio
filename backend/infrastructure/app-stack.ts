@@ -3,8 +3,8 @@ import {
   aws_cloudfront,
   aws_cloudfront_origins,
   aws_certificatemanager,
-  aws_route53,
-  aws_route53_targets,
+  // aws_route53,
+  // aws_route53_targets,
 } from "aws-cdk-lib";
 import { Construct } from "constructs";
 

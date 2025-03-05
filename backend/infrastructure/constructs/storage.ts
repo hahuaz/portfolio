@@ -2,10 +2,12 @@ import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { aws_s3 } from "aws-cdk-lib";
 
+type StorageConstructProps = Record<string, never>;
+
 export class StorageConstruct extends Construct {
   public readonly siteBucket: aws_s3.Bucket;
 
-  constructor(scope: Construct, id: string, props: any) {
+  constructor(scope: Construct, id: string, _props: StorageConstructProps) {
     super(scope, id);
 
     // BUCKETS
