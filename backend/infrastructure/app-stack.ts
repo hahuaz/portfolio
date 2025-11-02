@@ -15,11 +15,13 @@ export class AppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const { DOMAIN_NAME, DOMAIN_CERTIFICATE } = process.env;
+    const { DOMAIN_NAME, STAR_SUBDOMAIN_CERTIFICATE } = process.env;
 
-    if (!DOMAIN_NAME || !DOMAIN_CERTIFICATE) {
+    if (!DOMAIN_NAME || !STAR_SUBDOMAIN_CERTIFICATE) {
       throw new Error("missing env variable.");
     }
+
+    const portfolioDomainName = "portfolio." + DOMAIN_NAME;
 
     const { siteBucket } = new StorageConstruct(this, `storage`, {});
 
@@ -91,14 +93,14 @@ export class AppStack extends cdk.Stack {
             responsePagePath: "/index.html",
           },
         ],
-        domainNames: [DOMAIN_NAME],
+        domainNames: [portfolioDomainName],
         /**
          * CF distribution only accept certificates that is created on us-east-1. Certificate will be created manually on the console because it requires manuel DNS validation on registrar.
          */
         certificate: aws_certificatemanager.Certificate.fromCertificateArn(
           this,
-          "DOMAIN_CERTIFICATE",
-          DOMAIN_CERTIFICATE
+          "STAR_SUBDOMAIN_CERTIFICATE",
+          STAR_SUBDOMAIN_CERTIFICATE
         ),
       }
     );
